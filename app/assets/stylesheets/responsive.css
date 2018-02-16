@@ -1,0 +1,93 @@
+
+@media screen and (max-width: 1200px){
+
+.db-list .w-25 , .w-15 , .w-35{width:100%!important;}
+.db-list li{display: table}
+.db-list .space_between{padding:10px 0px 10px 0px!important;}
+.cs-tab-contnt .pr-10{padding-right: 0px}
+.cs-tab-contnt .pl-10{padding-left:0px;}
+.width-inc{width:200px!important;}
+.res-m-r{margin-right:10px;}
+.tab-view{padding: 10px 0;text-align: center;}
+.radio-list ul li{display:table;width:100%;}
+
+.ind-left{width:100%;}
+.ind-left .b-tabs{display: block;width: 100%}
+.ind-left .b-tabs li{float: left;padding:0 7px;}
+.ind-right{width:100%;margin-top:20px;}
+.ind-right .b-tabs{display: block;width: 100%}
+.ind-right .b-tabs li{float: left;padding:0 7px;}
+.b-tabs .tab-link span{padding: 5px 8px;}
+
+}
+
+@media screen and (max-width : 1250px){
+
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+.db-right{width: 200px;}
+.db-mid{padding-right: 220px;padding-left: 170px;padding-top: 120px;padding-bottom: 20px;}
+.form_control{width:100%;}
+.res-btn button{margin-top:10px;}
+.db-right ul li img{width: 70px;}
+.db-right ul li font{font-size: 16px;}
+.db-mid-3{padding-left: 320px;padding-top: 120px;padding-right: 20px;padding-bottom: 20px;}
+.db-mid-2{padding-left: 170px;padding-top: 120px;padding-right: 20px;padding-bottom: 20px;}
+.res-pad-20{padding:20px 0;}
+.db-mid-3 .pl-30{padding-left:0px;}
+.rahab-list tbody tr td:last-child{width: 220px;}
+.w-40{width:100%;}
+.w-50{width:100%!important;}
+.w-60{width:100%;}
+.min-h-180{margin-bottom: 20px;}
+.card-bg{margin-bottom: 20px;}
+
+.f_contrl{position: relative;top: 0;width: auto;}
+.av-inp{padding-left: 0}
+.av-vid-list li{float: left;width: 50%;}
+.msg-txt{display: block;}
+.ind-res .pr-30{padding-right: 5px;}
+.b-tabs .tab-link span{padding: 5px 8px;font-size: 13px;}
+
+
+
+
+
+
+
+	
+}
+
+@media screen and (max-width: 991px){
+	
+.form_control{width:100%;}
+.rehab-v-sectn ul li{float: left;width: 50%;padding: 0px 8px 10px;}
+.cs-c-info .pr-30{padding-right:0px;}
+.res-bot{margin-bottom:20px;}
+.add-v-sec .w-25{width:55%!important;}
+.avatar{margin-bottom: 20px;}
+.db-tabbls .pr-30{padding-right:0px;}
+.pl-15{padding-left:0px;}
+.pr-15{padding-right:0px;}
+.tab-width .w-10{width:20%;}
+.trends-table{width: 600px;}
+
+
+}
+
+@media screen and (max-width: 767px){
+
+
+.db-grid{min-width: 1000px;}
+.pl-15{padding-left:15px;}
+.pr-15{padding-right:15px;}
+.db-right{width: 200px;}
+.cs-tab-contnt{width: 1000px;}
+
+}	
+
+
+
+

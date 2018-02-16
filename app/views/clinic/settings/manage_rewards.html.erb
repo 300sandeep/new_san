@@ -1,0 +1,130 @@
+
+	<!-- db left section -->
+
+	<section class="db-sectn">
+		<%=render 'layouts/clinic_sidebar'%>
+		<%=render 'layouts/setting_sidebar'%>
+		<div class="db-mid-3">
+			<h3 class="db-headng text-center">JOHN DOE</h3>
+			<div class="db-grid">
+				<h3 class="db-headng ovr">Manage Rewards</h3>
+				<span class="db-txt">
+					Replace a virtual game reward with a real clinic offering such as 100% off product, etc. Each reward takes 100 app points (minutes) to achieve. 
+				</span>
+				<div class="row d-flex mt-20">
+					<div class="col-md-12 col-lg-12 col-xl-6 ac-right">
+						<table class="" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th>Standard Reward</th>
+									<th>Clinic Reward</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="db-txt">Emerald Gem</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Sapphire Gem</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Ruby Gem</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Diamond Gem</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Bronze Star</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Silver Star</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="db-txt">Gold Star</td>
+									<td class="">
+										<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">Replace</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="mt-10 md-block">
+					<div class="db-txt">
+						<small>
+							*Note any changes will also change on Client's Mobile App, in effect from the moment forward office discretion to reward former earners prior to clinic reward changes taking place
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Replace Gem modal -->
+
+	<div class="modal fade" id="replaceGem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered add-dash-dialog" role="document">
+	    <div class="modal-content">
+	      
+	        <button type="button" class="close close-ab" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true"><img src="images/close.png" alt="image"></span>
+	        </button>
+	      
+		    <div class="modal-body">
+		    	<span class="md-block db-txt">Replace Diamond Gem with</span>
+		    	<select class="form-control">
+		    		<option value="">10% OFF Product</option>
+		    		<option value="">10% OFF Product</option>
+		    		<option value="">10% OFF Product</option>
+		    		<option value="">10% OFF Product</option>
+		    	</select>
+		    	<div class="mt-20 text-center">
+			    	<div class="db-txt">
+						<small>
+							*Note any changes will also change on Client's Mobile App, in effect from the moment forward office discretion to reward former earners prior to clinic reward changes taking place
+						</small>
+					</div>
+		    	</div>
+		    	<div class="mt-20 text-center">
+			    	<button class="g-btn-auto" type="submit">
+			    		Change
+			    	</button>
+		    	</div>
+		    </div>
+		    
+		    
+	    </div>
+	  </div>
+	</div>
+
+
+	
+
+	
+	
+
+
+<script>
+	$(".change_btn").click(function(){
+		$(".hide-btn").addClass("show-btn")
+	});
+</script>
+

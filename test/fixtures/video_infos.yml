@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  rehab_name: MyString
+  point_amount: MyString
+  sets: 1
+  reps: 1
+  description: MyString
+
+two:
+  url: MyString
+  rehab_name: MyString
+  point_amount: MyString
+  sets: 1
+  reps: 1
+  description: MyString

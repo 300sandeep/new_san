@@ -1,0 +1,31 @@
+<section class="db-sectn">
+	<%=render 'layouts/clinic_sidebar'%>
+	<div class="db-mid-2">
+		<div class="db-grid">
+			<h3 class="db-headng ovr">
+				All Clients
+				<div class="pos-right">
+					<div class="db-txt in-blck">Show</div>
+					<div class="cl-short in-blck">
+						<%= form_tag clinic_clients_path, method: :get, id: 'limit_form', remote: true do %>
+						  <%= select_tag :limit, options_for_select([5, 10, 15, 20], 
+						   selected: params[:limit] || 10) %>
+						<% end %>
+					</div>
+					<div class="db-txt in-blck">Clients</div>
+				</div>
+			</h3>
+			<div id= "posts_list">
+			  <%=render partial: 'index',locals: {clients: @clients}%>
+			</div>  
+			<div class="d-flex justify-content-between">
+				<div class="align-self-start">
+					<span class="db-txt">
+						<!--Showing 1 to 10 Clients of 278 Clients<br>-->
+						<%= page_entries_info @clients %>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

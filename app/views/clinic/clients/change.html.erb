@@ -1,0 +1,221 @@
+<!-- db left section -->
+<section class="db-sectn">
+	<%=render 'layouts/clinic_sidebar'%>
+	<%=render 'layouts/clinic_client_sidebar'%>
+	<div class="db-mid-3">
+		<div class="db-grid">
+			<div class="md-block text-center">
+				<button class="fullbody-btn">Full Body</button>
+			</div>
+			<div class="d-flex justify-content-between flex-md-column flex-lg-column flex-xl-row flex-nowrap mt-40 ind-res">
+				<div class="align-self-start ind-left">
+					<ul class="b-tabs">
+						<li class="tab-link an-link1">
+							<span>Anterior Neck</span>
+						</li>
+						<li class="tab-link fc-link2">
+							<span>Front Chest</span>
+						</li>
+						<li class="tab-link fc-link2">
+							<span>Biceps</span>
+						</li>
+						<li class="tab-link hn-link-3">
+							<span>Hands/Forearms</span>
+						</li>
+						<li class="tab-link cr-link-4">
+							<span>Core</span>
+						</li>
+						<li class="tab-link qd-link-5">
+							<span>Quadriceps</span>
+						</li>
+						<li class="tab-link qd-link-5">
+							<span>Knee</span>
+						</li>
+						<li class="tab-link ft-link-6">
+							<span>Anterior Tibalis</span>
+						</li>
+					</ul>
+				</div>
+				<div class="align-self-start ind-mid">
+					<div class="d-flex">
+						<div class="mgn-auto fade-body">
+							<img src="/assets/body.png" alt="image" class="body">
+							<div id="anterior-neck" class="img-hide">
+								<div class="an-neck">
+									<img src="/assets/body-images/anterior-neck.png" alt="image">
+								</div>
+							</div>
+							<div id="front-chest" class="img-hide">
+								<div class="f-chest">
+									<img src="/assets/body-images/front-chest.png" alt="image">
+								</div>
+							</div>
+							<div id="front-chest" class="img-hide">
+								<div class="f-chest">
+									<img src="/assets/body-images/front-chest.png" alt="image">
+								</div>
+							</div>
+							<div id="hand" class="img-hide">
+								<div class="h-image">
+									<img src="/assets/body-images/hands.png" alt="image">
+								</div>
+							</div>
+							<div id="core" class="img-hide">
+								<div class="im-core">
+									<img src="/assets/body-images/core.png" alt="image">
+								</div>
+							</div>
+							<div id="quadriceps" class="img-hide">
+								<div class="qd-image">
+									<img src="/assets/body-images/quadriceps.png" alt="image">
+								</div>
+							</div>
+							<div id="knee" class="img-hide">
+								<div class="qd-image">
+									<img src="/assets/body-images/quadriceps.png" alt="image">
+								</div>
+							</div>
+							<div id="anterior-tibalis" class="img-hide">
+								<div class="feet-img">
+									<img src="/assets/body-images/feets.png" alt="image">
+								</div>
+							</div>
+							<div id="posterior-neck" class="img-hide">
+								<div class="pn-img">
+									<img src="/assets/body-images/posterior-neck.png" alt="image">
+								</div>
+							</div>
+							<div id="upper-back" class="img-hide">
+								<div class="up-img">
+									<img src="/assets/body-images/upper-back.png" alt="image">
+								</div>
+							</div>
+							<div id="triceps" class="img-hide">
+								<div class="up-img">
+									<img src="/assets/body-images/upper-back.png" alt="image">
+								</div>
+							</div>
+							<div id="lower-back" class="img-hide">
+								<div class="lb-img">
+									<img src="/assets/body-images/lower-back.png" alt="image">
+								</div>
+							</div>
+							<div id="glutes" class="img-hide">
+								<div class="glu-img">
+									<img src="/assets/body-images/hamstrings.png" alt="image">
+								</div>
+							</div>
+							<div id="hamstrings">
+								<div class="glu-img">
+									<img src="/assets/body-images/hamstrings.png" alt="image">
+								</div>
+							</div>
+							<div id="calves" class="img-hide">
+								<div class="feet-img">
+									<img src="/assets/body-images/feets.png" alt="image">
+								</div>
+							</div>
+							<div id="feet" class="img-hide">
+								<div class="feet-img">
+									<img src="/assets/body-images/feets.png" alt="image">
+								</div>
+							</div>
+							<div class="face-front">
+								<img src="/assets/body-images/face-front.png" alt="image">
+							</div>
+							<div class="back-face">
+								<img src="/assets/body-images/back-face.png" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="align-self-start order-2 ind-right">
+					<ul class="b-tabs">
+						<li class="tab-link pn-link-8">
+							<span>Posterior Neck</span>
+						</li>
+						<li class="tab-link ft-link-7">
+							<span>Upper Back</span>
+						</li>
+						<li class="tab-link ft-link-7" >
+							<span>Triceps</span>
+						</li>
+						<li class="tab-link lb-link-9" >
+							<span>Lower Back</span>
+						</li>
+						<li class="tab-link gl-link-10" >
+							<span>Glutes</span>
+						</li>
+						<li class="tab-link gl-link-10" >
+							<span>Hamstrings</span>
+						</li>
+						<li class="tab-link ft-link-6" >
+							<span>Calves</span>
+						</li>
+						<li class="tab-link ft-link-6" >
+							<span>Feet</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+
+<!-- jquery -->
+
+
+<script>
+$(document).ready(function(){
+	$('.an-link1').click(function(){
+		$('#anterior-neck').toggle();
+		$('.an-link1 span').toggleClass('color-hover');
+	});
+	$('.fc-link2').click(function(){
+		$('#front-chest').toggle();
+		$('.fc-link2 span').toggleClass('color-hover');
+	});
+	$('.hn-link-3').click(function(){
+		$('#hand').toggle();
+		$('.hn-link-3 span').toggleClass('color-hover');
+	});
+	$('.cr-link-4').click(function(){
+		$('#core').toggle();
+		$('.cr-link-4 span').toggleClass('color-hover');
+	});
+	$('.qd-link-5').click(function(){
+		$('#quadriceps').toggle();
+		$('.qd-link-5 span').toggleClass('color-hover');
+	});
+	$('.ft-link-6').click(function(){
+		$('#feet').toggle();
+		$('.ft-link-6 span').toggleClass('color-hover');
+	});
+	$('.ft-link-7').click(function(){
+		$('#upper-back').toggle();
+		$('.ft-link-7 span').toggleClass('color-hover');
+	});
+	$('.pn-link-8').click(function(){
+		$('#posterior-neck').toggle();
+		$('.pn-link-8 span').toggleClass('color-hover');
+	});
+	$('.lb-link-9').click(function(){
+		$('#lower-back').toggle();
+		$('.lb-link-9 span').toggleClass('color-hover');
+	});
+	$('.gl-link-10').click(function(){
+		$('#glutes').toggle();
+		$('.gl-link-10 span').toggleClass('color-hover');
+	});
+	$('.fullbody-btn').click(function(){
+		$('.img-hide').toggle();
+		$('.face-front').toggle();
+		$('.back-face').toggle();
+		$('.fullbody-btn').toggleClass('color-hover');
+		$('.b-tabs li span').toggleClass('color-hover');
+	});
+	
+});
+</script>

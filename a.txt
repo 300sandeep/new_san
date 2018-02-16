@@ -1,0 +1,40 @@
+                        Prefix Verb   URI Pattern                               Controller#Action
+              new_user_session GET    /users/sign_in(.:format)                  devise/sessions#new
+                  user_session POST   /users/sign_in(.:format)                  devise/sessions#create
+          destroy_user_session DELETE /users/sign_out(.:format)                 devise/sessions#destroy
+             new_user_password GET    /users/password/new(.:format)             devise/passwords#new
+            edit_user_password GET    /users/password/edit(.:format)            devise/passwords#edit
+                 user_password PATCH  /users/password(.:format)                 devise/passwords#update
+                               PUT    /users/password(.:format)                 devise/passwords#update
+                               POST   /users/password(.:format)                 devise/passwords#create
+      cancel_user_registration GET    /users/cancel(.:format)                   users/registrations#cancel
+         new_user_registration GET    /users/sign_up(.:format)                  users/registrations#new
+        edit_user_registration GET    /users/edit(.:format)                     users/registrations#edit
+             user_registration PATCH  /users(.:format)                          users/registrations#update
+                               PUT    /users(.:format)                          users/registrations#update
+                               DELETE /users(.:format)                          users/registrations#destroy
+                               POST   /users(.:format)                          users/registrations#create
+                          root GET    /                                         clinic/users#home
+          unauthenticated_root GET    /                                         devise/sessions#new
+                               GET    /                                         users#index
+             home_clinic_users GET    /clinic/users/home(.:format)              clinic/users#home
+                  clinic_users GET    /clinic/users(.:format)                   clinic/users#index
+                               POST   /clinic/users(.:format)                   clinic/users#create
+               new_clinic_user GET    /clinic/users/new(.:format)               clinic/users#new
+              edit_clinic_user GET    /clinic/users/:id/edit(.:format)          clinic/users#edit
+                   clinic_user GET    /clinic/users/:id(.:format)               clinic/users#show
+                               PATCH  /clinic/users/:id(.:format)               clinic/users#update
+                               PUT    /clinic/users/:id(.:format)               clinic/users#update
+                               DELETE /clinic/users/:id(.:format)               clinic/users#destroy
+           home_clinic_clients GET    /clinic/clients/home(.:format)            clinic/clients#home
+          rehab_clinic_clients GET    /clinic/clients/rehab(.:format)           clinic/clients#rehab
+         change_clinic_clients GET    /clinic/clients/change(.:format)          clinic/clients#change
+       messages_clinic_clients GET    /clinic/clients/messages(.:format)        clinic/clients#messages
+          stats_clinic_clients GET    /clinic/clients/stats(.:format)           clinic/clients#stats
+                clinic_clients GET    /clinic/clients(.:format)                 clinic/clients#index
+     dashboard_clinic_settings GET    /clinic/settings/dashboard(.:format)      clinic/settings#dashboard
+        videos_clinic_settings GET    /clinic/settings/videos(.:format)         clinic/settings#videos
+manage_rewards_clinic_settings GET    /clinic/settings/manage_rewards(.:format) clinic/settings#manage_rewards
+           abc_clinic_settings GET    /clinic/settings/abc(.:format)            clinic/settings#abc
+               clinic_settings POST   /clinic/settings(.:format)                clinic/settings#create
+               clinic_accounts GET    /clinic/accounts(.:format)                clinic/accounts#index

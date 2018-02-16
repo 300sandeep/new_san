@@ -1,0 +1,4 @@
+
+<%binding.pry%>
+
+$("#posts_list").html("<%= escape_javascript(render :partial => 'index', :locals =>{:clients => @clients}) %>");

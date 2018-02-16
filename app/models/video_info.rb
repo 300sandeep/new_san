@@ -1,0 +1,3 @@
+class VideoInfo < ApplicationRecord
+
+end

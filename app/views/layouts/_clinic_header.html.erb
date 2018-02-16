@@ -1,0 +1,20 @@
+<header>
+	<div class="container-fluid header d-flex  align-items-center">
+		<div class="mr-auto">
+			<a href="cs_home.html"> 
+				<img src="/assets/logo.png" alt="LOGO">
+			</a>
+		</div>
+		Logged in as &nbsp;<strong><%= current_user.email %></strong>
+		<div class="h-right">
+			<ul>
+				<li>
+					<img src="/assets/logo-2.png" alt="LOGO">
+				</li>
+				<li>
+					<%= link_to image_tag('power.png'), destroy_user_session_path, method: :delete %>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,349 @@
+
+
+<!-- db left section -->
+
+<section class="db-sectn">
+	<%=render 'layouts/clinic_sidebar'%>
+      <%=render 'layouts/clinic_client_sidebar'%>
+	<div class="db-mid-3 stat-info">
+		<h3 class="db-headng text-center">JOHN DOE</h3>
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+		    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Trends</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link " id="profile-tab" data-toggle="tab" href="#records" role="tab" aria-controls="profile" aria-selected="false">Records</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">History</a>
+		</li>
+		
+		  
+		  
+		</ul>
+		<div class="db-grid">
+			<div class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="home-tab">
+			  	<h3 class="db-headng ovr">History</h3>
+			  	<div class="table-responsive bx-sh">
+			  			<table class="trends-table">
+			  			<thead>
+			  				<tr>
+			  					<th>
+			  						Name
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-1.png" alt="image">
+			  						<span class="md-block b-color">10-9</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-2.png" alt="image">
+			  						<span class="md-block b-color-2">8-7</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-3.png" alt="image">
+			  						<span class="md-block y-color">6-5</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-4.png" alt="image">
+			  						<span class="md-block bl-color">4-3</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-5.png" alt="image">
+			  						<span class="md-block g-color">2-3</span>
+			  					</th>
+			  					<th>
+			  						Trend
+			  					</th>
+			  				</tr>
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+			  					<td><span class="db-txt">Sit Ups</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-1.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Dumbbell Overhead press</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-2.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Adductor stretch</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-3.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Arm raise</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-4.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td colspan="6">
+			  						<span class="db-txt">
+			  							Ball lift with ext rotation
+			  						</span>
+			  					</td>
+			  				</tr>
+			  			</tbody>
+			  			</table>
+			  		</div>
+			  </div>
+			  <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="profile-tab">
+			  		<h3 class="db-headng ovr">Trends</h3>
+			  		<div class="table-responsive bx-sh">
+			  			<table class="trends-table">
+			  			<thead>
+			  				<tr>
+			  					<th>
+			  						Name
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-1.png" alt="image">
+			  						<span class="md-block b-color">10-9</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-2.png" alt="image">
+			  						<span class="md-block b-color-2">8-7</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-3.png" alt="image">
+			  						<span class="md-block y-color">6-5</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-4.png" alt="image">
+			  						<span class="md-block bl-color">4-3</span>
+			  					</th>
+			  					<th class="text-center">
+			  						<img src="/assets/smily-5.png" alt="image">
+			  						<span class="md-block g-color">2-3</span>
+			  					</th>
+			  					<th>
+			  						Trend
+			  					</th>
+			  				</tr>
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+			  					<td><span class="db-txt">Sit Ups</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-1.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Dumbbell Overhead press</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-2.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Adductor stretch</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-3.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="db-txt">Arm raise</span></td>
+			  					<td><span class="db-txt">6</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">1</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td><span class="db-txt">3</span></td>
+			  					<td>
+			  						<img src="/assets/trend-icon-4.png" alt="image">
+			  					</td>
+			  				</tr>
+			  				<tr>
+			  					<td colspan="6">
+			  						<span class="db-txt">
+			  							Ball lift with ext rotation
+			  						</span>
+			  					</td>
+			  				</tr>
+			  			</tbody>
+			  			</table>
+			  		</div>
+			  </div>
+
+			  <div class="tab-pane fade" id="records" role="tabpanel" aria-labelledby="profile-tab">
+			  	<h3 class="db-headng ovr">Records</h3>
+			  	<div class="row">
+			  		<div class="col-md-12 col-lg-12 col-xl-6 ac-right">
+			  			<table cellpadding="0" cellspacing="0">
+			  				<thead>
+								<tr>
+									<th width="50%">Date</th>
+									<th width="50%">Video Name</th>
+								</tr>
+							</thead>
+			  			</table>
+			  		<div class="mCustomScrollbar scroll-height" data-mcs-theme="inset-3">
+						<table class="" cellpadding="0" cellspacing="0">
+						
+						<tbody>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" class="db-txt">8/2/17</td>
+								<td width="50%">
+									<a href="#" class="g-color" data-toggle="modal" data-target="#replaceGem">View Video</a>
+								</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			  </div>
+
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<div class="modal sc-modal fade" id="sessionView" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+        <button type="button" class="close close-ab" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="/assets/close.png" alt="image"></span>
+        </button>
+      
+	    <div class="modal-body">
+	    	<div class="d-flex justify-content-between m-header">
+	    		<div class="align-self-center">
+	    			<img src="/assets/logo.png" alt="image">
+	    		</div>
+	    		<div class="align-self-center ml-auto">
+	    			<img src="/assets/logo-2.png" alt="image">
+	    		</div>
+	    	</div>
+	    	<div class="ac-right mt-20">
+	    		<table  cellspacing="0" cellpadding="0">
+	    			<thead>
+	    				<tr>
+	    					<th>
+	    						Date
+	    					</th>
+	    					<th>
+	    						Stretches
+	    					</th>
+	    					<th>
+	    						Exercises
+	    					</th>
+	    				</tr>
+	    			</thead>
+					<tbody>
+						<tr>
+							<td class="db-txt">11/10/2017</td>
+							<td>
+								<span class="g-color">Adductor Stretch</span>
+								<span class="md-block g-color">Doorway Stretch</span>
+							</td>
+							<td>
+								<span class="g-color">Dumbbell raise</span>
+								<span class="md-block g-color">Boo raise</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="db-txt">11/10/2017</td>
+							<td>
+								<span class="g-color">Adductor Stretch</span>
+								<span class="md-block g-color">Doorway Stretch</span>
+							</td>
+							<td>
+								<span class="g-color">Dumbbell raise</span>
+								<span class="md-block g-color">Boo raise</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="db-txt">11/10/2017</td>
+							<td>
+								<span class="g-color">Adductor Stretch</span>
+								<span class="md-block g-color">Doorway Stretch</span>
+							</td>
+							<td>
+								<span class="g-color">Dumbbell raise</span>
+								<span class="md-block g-color">Boo raise</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	    </div>
+    </div>
+  </div>
+</div>

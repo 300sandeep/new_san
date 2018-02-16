@@ -1,0 +1,159 @@
+
+	<section class="db-sectn">
+		<%=render 'layouts/clinic_sidebar'%>
+		<%=render 'layouts/setting_sidebar'%>
+		<div class="db-mid-3">
+			<h3 class="db-headng text-center">JOHN DOE</h3>
+		<%=form_for @video, :url => clinic_settings_path do |f|%>
+			<div class="db-grid">
+				<h3 class="db-headng ovr">Add Own Videos</h3>
+				<div class="d-flex justify-content-start flex-md-column flex-lg-row flex-xl-row add-v-sec">
+					<div class="align-self-start pr-30 w-25">
+						<button class="trns-btn-2">ADD THUMBNAIL</button>
+						<%= f.fields_for :images do |builder| %>
+						  <%# if builder.object.new_record? %>
+
+					      <%= builder.file_field :name%>
+					 
+              <%# end %>
+				    <% end %>
+				          
+
+						<div class="avatar mt-20">
+							<img src="/assets/avatar.png" alt="image">
+						</div>
+					</div>
+					<div class="align-self-start pr-30 w-40">
+						<div class="db-txt">Add Video</div>
+						<div class="mt-10 av-inp">
+							<span class="db-txt f_contrl">www.youtube.com/</span>
+							<%= f.text_field :url, class: "form-control" %>
+						</div>
+						<div class="form-group mt-10">
+							<span class="db-txt">Point Amount</span>
+						  <%= f.select :amount, ['select', 'Lorem Ipsum', 'Lorem Ipsum'], {},{class: "form-control"}%>
+						</div>
+
+						<div class="db-txt">Type</div>
+							<div class="radio-list mt-10">
+								<ul>
+									<li>
+									 	<div class="radio">
+			  								<label class="radioType db-txt">Stretch
+											 
+											  <%= f.radio_button :type, :stretch, :checked => true%>
+
+											  <span class="checkmark"></span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="radio">
+										    <label class="radioType db-txt">Exercise
+											  <%= f.radio_button :type, :exercise %>
+											  <span class="checkmark"></span>
+										    </label>
+										</div>
+									</li>
+									<li>
+										<div class="radio">
+										    <label class="radioType db-txt">Video
+											  <%= f.radio_button :type, :video %>
+											  <span class="checkmark"></span>
+										    </label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					<div class="align-self-start w-35">
+						<div class="form-group">
+							<span class="db-txt">Rehab Name</span>
+							<%= f.text_field :rehab_name, class: "form-control" %>
+						</div>
+						<div class="form-group">
+							<span class="db-txt">Sets</span>
+							<%= f.select :sets, ['select', 'Lorem Ipsum', 'Lorem Ipsum'], {},{class: "form-control"}%>
+						</div>
+						<div class="form-group">
+							<span class="db-txt">Reps</span>
+							<%= f.select :reps, ['select', 'Lorem Ipsum', 'Lorem Ipsum'], {},{class: "form-control"}%>
+						</div>
+						<div>
+							<span class="db-txt">Description</span>
+							<textarea class="form-control form-control-h" rows="1" placeholder="Raise arm slightly overhead, be sure to write anything else you want to here." name="video[description]"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="mt-20">
+					<div class="db-headng">Body Locations</div>
+					<ul class="av-vid-list">
+					  <%BodyLocation.all.each.with_index(1) do |b, index|%>
+					    <%if index % 5 == 0%>
+					      </ul>
+					      <ul class="av-vid-list">
+					    <%end%>
+					    <%ch  = (index == 1) ? "true" : "" %>
+							<li>
+								<label class="checkboxType db-txt"><%=b.name%>
+								  <input type="checkbox" value = "<%=b.id%>" checked="false" name="video[body_locations][]">
+								  <span class="checkmark"></span>
+								</label>
+
+							</li>
+						<%end%>					
+				</div>
+				<div class="mt-20">
+					<button class="g-btn-auto" data-toggle="modal" data-target="#addVideo">
+						SUBMIT
+					</button>
+				</div>
+			</div>
+		</div>
+		<%end%>
+		
+	</section>
+
+
+	<!-- video added modal -->
+
+	<div class="modal  fade" id="addVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered add-vid-dialog" role="document">
+	    <div class="modal-content">
+	      
+	        <button type="button" class="close close-ab" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true"><img src="/assets/close.png" alt="image"></span>
+	        </button>
+	      
+		    <div class="modal-body">
+		    	<div class="approv-img text-center">
+		    		<img src="/assets/approv.png" alt="image">
+		    	</div>
+		    	<div class="mt-20 text-center">
+		    		<span class="g-color">
+		    			Congrats, your clinic video has been added!
+		    		</span>
+		    	</div>
+		    	<div class="mt-10 text-center">
+		    		<span class="db-txt">
+		    			Would you like to submit this for approval to the community videos, or keep for your internal clinic use only?
+		    		</span>
+		    	</div>
+		    	<div class="mt-20">
+		    		<div class="row d-flex">
+		    			<div class="col-md-6 col-lg-6">
+		    				<button class="g-btn-auto" type="submit">
+		    					Yes, Please Submit for Approval 
+		    				</button>
+		    			</div>
+		    			<div class="col-md-6 col-lg-6">
+		    				<button class="r-btn-auto" type="submit">
+		    					No Thanks, Please keep internal
+		    				</button>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>

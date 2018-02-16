@@ -1,0 +1,109 @@
+<section class="db-sectn">
+	<%=render 'layouts/clinic_sidebar'%>
+	<div class="db-mid">
+	<%= render 'shared/flash_messages' if !flash.empty? %>
+
+	<%= @user.errors.full_messages.first if @user.errors.any? %>
+		<div class="db-grid">
+			<ul class="db-list">
+				<li class="w-15">
+					<span class="db-txt mr-10">Client Name</span>
+				</li>
+				<li class="w-35">
+				<%= form_tag clinic_clients_path, method: :get do %>
+				  <%=text_field_tag 'value', "", class: "form_control"%>
+				
+					</li>
+					<li class="w-25 space_between">
+						<%=submit_tag "SEARCH", class: "g-btn"%>
+					</li>					
+			  <%end%>		
+				<li class="w-25">
+					<button class="b-btn">
+						<%=link_to "VIEW ALL CLIENTS", clinic_clients_path%>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="db-grid mt-20">
+			<h3 class="db-headng">
+				New Client Entry
+			</h3>
+			<%= form_for(@user, url: clinic_users_path) do |f| %>
+        <%#= devise_error_messages! %>
+				<div class="d-flex row">
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">First Name</span>
+							<%= f.text_field :first_name, class: "form-control" %>
+						</div>
+					</div> 
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">Last Name</span>
+							<%= f.text_field :last_name, class: "form-control" %>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">Email Address</span>
+							<%= f.email_field :email, autofocus: true, class: "form-control" %>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">Re Type Email Address</span>
+							<%= f.email_field :email_confirmation, class: "form-control" %>
+							<!--<input type="text" class="form-control">-->
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">Password</span>
+							<%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="form-group">
+							<span class="db-txt">Re Type Password</span>
+							<%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-2">
+						<button class="g-btn-auto">
+							SUBMIT
+						</button>
+					</div>
+				</div>
+		  <%end%>		
+		</div>
+		<div class="db-grid mt-20">
+			<h3 class="db-headng">
+				Overall App Usage
+			</h3>
+			<div class="graph-image">
+				<img src="/assets/graph-1.png" alt="image">
+			</div>
+		</div>
+	</div>
+	<div class="db-right pull-right">
+		<ul>
+			<li>
+				<img src="/assets/db-icon-right-1.png" alt="image">
+				<span class="r-color">5</span>
+				<font>Unread Messages</font>
+			</li>
+			<li>
+				<img src="/assets/db-icon-right-2.png" alt="image">
+				<span class="y-color">15</span>
+				<font>Active Users</font>
+			</li>
+			<li>
+				<img src="/assets/db-icon-right-3.png" alt="image">
+				<span class="g2-color">25</span>
+				<font>Weekly Clinic Sessions</font>
+			</li>
+		</ul>
+	</div>
+</section>
+	
