@@ -7,6 +7,13 @@ GIT
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
 
+GIT
+  remote: https://github.com/pedantix/remotipart.git
+  revision: 7f7989db572976816c03508c335bbc1d8230af78
+  ref: 7f7989db572976816c03508c335bbc1d8230af78
+  specs:
+    remotipart (1.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -229,6 +236,7 @@ DEPENDENCIES
   pry
   puma (~> 3.0)
   rails (~> 5.0.6)
+  remotipart (~> 1.2)!
   rolify
   sass-rails (~> 5.0)
   spring

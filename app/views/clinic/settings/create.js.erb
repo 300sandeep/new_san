@@ -1,3 +1,4 @@
 <%binding.pry%>
 
-$("#video_popup").html("<%= escape_javascript(render :partial => 'setting/video_success_popup', :locals =>{:video_id => @video.id}) %>");
+$("#video_popup").html("<%= escape_javascript(render :partial => 'success_video_modal', :locals =>{:video_id => @video.id}) %>");
+$('#addVideo').modal('show');

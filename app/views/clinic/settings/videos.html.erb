@@ -4,7 +4,7 @@
 		<%=render 'layouts/setting_sidebar'%>
 		<div class="db-mid-3">
 			<h3 class="db-headng text-center">JOHN DOE</h3>
-		<%=form_for @video, :url => clinic_settings_path do |f|%>
+		<%=form_for @video, :url => clinic_settings_path,  method: :post, remote: true do |f|%>
 			<div class="db-grid">
 				<h3 class="db-headng ovr">Add Own Videos</h3>
 				<div class="d-flex justify-content-start flex-md-column flex-lg-row flex-xl-row add-v-sec">
@@ -12,13 +12,12 @@
 						<button class="trns-btn-2">ADD THUMBNAIL</button>
 						<%= f.fields_for :images do |builder| %>
 						  <%# if builder.object.new_record? %>
-
+                          <%= link_to "javascript:;" , class: "browseBtn" do %>
 					      <%= builder.file_field :name%>
-					 
+					  <% end %>
               <%# end %>
 				    <% end %>
 				          
-
 						<div class="avatar mt-20">
 							<img src="/assets/avatar.png" alt="image">
 						</div>
@@ -104,7 +103,7 @@
 						<%end%>					
 				</div>
 				<div class="mt-20">
-					<button class="g-btn-auto" data-toggle="modal" data-target="#addVideo">
+					<button class="g-btn-auto" data-toggle="modal">
 						SUBMIT
 					</button>
 				</div>

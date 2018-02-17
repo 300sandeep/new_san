@@ -26,7 +26,7 @@ gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks'
-
+gem 'remotipart', '~> 1.2', github: 'pedantix/remotipart', ref: '7f7989db572976816c03508c335bbc1d8230af78'
 gem "nested_form"
 
 gem 'kaminari'

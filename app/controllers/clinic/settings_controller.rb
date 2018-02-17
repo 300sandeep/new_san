@@ -12,15 +12,13 @@ class Clinic::SettingsController < ApplicationController
 	end
 
 	def create
-		binding.pry
 		@video = Video.new(video_params)
 		if @video.save!
-			@video.images.create(name: params[:video][:images_attributes]["0"]["name"][0])
+			@video.images.create(name: params[:video][:images_attributes]["0"]["name"])
 			params[:video][:body_locations].each do |b|
         @video.allocations.create(body_location_id: b)
       end  
 		end
-		redirect_to :back
 	end
 
 	def send_for_approve

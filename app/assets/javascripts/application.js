@@ -15,6 +15,7 @@
 //= require turbolinks
 //=require jquery.turbolinks
 //= require jquery_nested_form
+//= require jquery.remotipart
 //= require_tree .
 
 $(document).on('turbolinks:load', function () {
@@ -23,7 +24,11 @@ $(document).on('turbolinks:load', function () {
 	  });
 	})(jQuery);
 
-  
+  $('#limit').change(
+	function() {
+  	alert("sfsdf");
+	$('#limit_form').submit();
+	});
 
 })
 
